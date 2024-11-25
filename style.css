@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --font-base: "Cormorant Upright", serif;
+  --font-alt: "Open Sans", sans-serif;
+  --color-golden: #dcca87;
+  --color-black: #0c0c0c;
+  --color-gray: #545454;
+  --color-crimson: #f5efdb;
+  --color-grey: #aaaaaa;
+  --color-white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url("./images/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+span {
+  color: var(--color-golden);
+  font-weight: 500;
+}
+
+/* Navbar styles */
+.custom-bg-black {
+  background-color: #000 !important;
+}
+
+.navbar .main-logo {
+  width: 200px;
+  height: 50px;
+}
+
+.navbar-nav {
+  color: var(--color-golden);
+  list-style: none;
+}
+
+.custom-button {
+  text-decoration: none;
+  color: white;
+}
+
+.custom-button:hover {
+  color: var(--color-golden);
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-golden) !important;
+}
+
+/* Header styles*/
+.app__header {
+  background-color: var(--color-black) !important;
+}
+
+.p-subheading {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  line-height: 29.9px;
+  font-size: 23px;
+}
+
+.app__header-h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 117px;
+  font-size: 90px;
+}
+
+.subheading {
+  font-family: var(--font-alt);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+/* From Uiverse.io by shah1345 */
+.button2 {
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+
+.button2:active {
+  color: #666;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  /* border-radius: 50%; */
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: var(--color-golden);
+  /* border-radius: 50%; */
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #0c0c0c;
+  border: 1px solid #dcca87;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #dcca87;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #dcca87;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* about us section */
+.about-us-container .h3-header {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+  margin-bottom: 0.4em;
+  font-size: 50px;
+}
+
+.button-about {
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #f5efdb;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  background: transparent;
+  border: 1px solid #dcca87;
+}
+
+.button-about:active {
+  color: #666;
+}
+
+.button-about:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  /* border-radius: 50%; */
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button-about:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: var(--color-golden);
+  /* border-radius: 50%; */
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button-about:hover {
+  color: #0c0c0c;
+  border: 1px solid #dcca87;
+}
+
+.button-about:hover:before {
+  top: -35%;
+  background-color: #dcca87;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button-about:hover:after {
+  top: -45%;
+  background-color: #dcca87;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* Menu Styles */
+.menu {
+  width: 100%;
+}
+
+#container2 {
+  margin-top: 20px;
+}
+
+/* Apply 50% transparent backdrop */
+.modal-backdrop.show {
+  background: rgba(0, 0, 0, 0.5); /* 50% transparency for the backdrop */
+}
+
+/* Apply 50% transparent background to the modal content */
+/* Apply 50% transparent backdrop with a light grey color */
+.modal-backdrop.show {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black backdrop */
+}
+
+/* Apply light grey background with 50% transparency to the modal content */
+.modal-content {
+  background-color: rgba(
+    211,
+    211,
+    211,
+    1
+  ); /* Light grey with 50% transparency */
+  border: none; /* Optional: Remove border */
+  box-shadow: none; /* Optional: Remove shadow */
+}
+
+/* Optional: Add padding for better spacing */
+.modal-body {
+  padding: 20px;
+}
+
+.modal-header,
+.modal-footer {
+  padding: 15px;
+}
+
+/* Optional: Change the color of text to improve readability */
+.modal-title,
+.modal-body p {
+  color: black; /* Dark text color for readability on light grey background */
+}
+
+.button-menu {
+  border-color: #dcca87;
+  background-color: transparent;
+  color: #fff;
+}
+.button-menu:hover {
+  background-color: #dcca87;
+  color: #000;
+}
+
+.button-menu-modal {
+  background-color: #dcca87;
+  color: #000;
+}
+
+.button-menu-modal:hover {
+  border-color: #dcca87;
+  background-color: black;
+  color: #fff;
+}
+
+.app__header-h4 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+footer .app__header__footer {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 117px;
+  font-size: 60px;
+}
+
+.footer-container {
+  border: 1px solid #dcca87; /* White border with 2px thickness */
+  padding: 20px; /* Padding around the content */
+}
+
+.p-subheading-footer {
+  font-family: var(--font-base) !important;
+  color: var(--color-white) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: capitalize !important;
+  font-feature-settings: "tnum" on, "lnum" on !important;
+  line-height: 29.9px !important;
+  font-size: 20px !important;
+}
+
+.subheading-lead {
+  font-family: var(--font-alt) !important;
+  color: var(--color-white) !important;
+  letter-spacing: 0.04em !important;
+  text-transform: capitalize !important;
+  font-feature-settings: "tnum" on, "lnum" on !important;
+  line-height: 29.9px !important;
+  font-size: 20px !important;
+}
+
+/* BREAKPOINT */
+
+/* Add this CSS to center the navbar items when collapsed */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: var(--color-golden);
+  }
+}

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fine Dine Restaurant</title>
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom css file link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- navbar section starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-bg-black" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="main-logo" src="./images/gericht.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <button class="btn btn-link custom-button" type="submit">
+            Log In / Registration
+          </button>
+          <button class="btn btn-link custom-button" type="submit">
+            Book Table
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar section ends -->
+
+    <!-- header section starts -->
+    <div class="custom-bg-black" id="header">
+      <div class="header container col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <p class="p-subheading">Chase the new flavour</p>
+            <h1 class="app__header-h1 display-5 fw-bold lh-3 mb-4">
+              The Key To Fine Dining
+            </h1>
+            <p class="subheading-lead">
+              Step into a world of refinement and sophistication. Let our expert
+              chefs guide you through a masterful symphony of flavors, where
+              each dish is a work of art. Experience timeless elegance and
+              impeccable service—your extraordinary dining journey awaits
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="button2 px-4">Explore Menu</button>
+            </div>
+          </div>
+          <div class=" col-sm-12 col-lg-6">
+            <img
+              src="./images/welcome.png"
+              class="d-block mx-lg-auto img-fluid"
+              alt="welcome-image"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header section ends -->
+
+    <!-- about us section starts -->
+    <section class="container about-us-container py-5">
+      <div class="row">
+        <!-- Carousel Column -->
+        <div class="col-lg-6 col-md-12">
+          <div
+            id="item-Carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/gallery01.jpg"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/gallery02.jpg"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/gallery03.jpg"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/gallery04.jpg"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#item-Carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#item-Carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="col-lg-6 col-md-12">
+          <h3 class="h3-header">The Essence of Fine Dining</h3>
+          <p class="subheading">
+            Welcome to a dining experience where passion meets perfection. We
+            believe that fine dining is not just about food—it's an art form.
+            <br /><br />
+            Our restaurant offers an exquisite blend of culinary craftsmanship,
+            impeccable service, and a warm, inviting atmosphere.
+            <br /><br />
+            Join us at <span>Gericht</span>, where exceptional food, fine wines,
+            and genuine hospitality come together to create a truly remarkable
+            dining experience.
+          </p>
+          <button id="about-btn" class="button-about">Learn More.</button>
+        </div>
+      </div>
+    </section>
+    <!-- about us section ends -->
+
+ <!-- menu section starts -->
+
+    <section id="menu" class="custom-bg-black">
+      <div class="container">
+        <h4 class="app__header-h4 py-4 text-center">Menu that fits your palate</h4>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <!-- Menu1 start -->
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative" 
+                 style="background-image: url('./images/menu01.jpg'); background-size: cover; background-position: center;">
+              <!-- Dark Overlay for visibility -->
+              <div class="overlay position-absolute top-0 bottom-0 start-0 end-0" style="background: rgba(0, 0, 0, 0.5);"></div>
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative">
+                <!-- Content Below -->
+                <div class="mt-auto d-flex flex-column align-items-start">
+                  <h4 class="app__header-h4">Special Grilled Steak Fillet</h4>
+                  <p class="p-subheading">€22.99</p>
+                </div>
+                <!-- Button on the right side -->
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-lg button-menu"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Order Now
+                  </button>
+
+              <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Item Details
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <h4>Special Grillet Steak Fillet</h4>
+                            <p>
+                              Savor the rich, smoky flavor of our perfectly grilled
+                              steak fillet. Tender, juicy, and cooked to perfection,
+                              each bite is a melt-in-your-mouth experience. Served
+                              with your choice of sides for a truly satisfying meal. A
+                              classic dish, elevated.
+                            </p>
+                            <img src="./images/menu01.jpg" alt="" class="img-fluid" />
+                            <p class="mt-3">€22.99</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn button-menu-modal">
+                              Add to Cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Menu1 end -->
+
+          <!-- Menu2 start -->
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative" 
+                 style="background-image: url('./images/menu02.jpg'); background-size: cover; background-position: center;">
+              <!-- Dark Overlay for visibility -->
+              <div class="overlay position-absolute top-0 bottom-0 start-0 end-0" style="background: rgba(0, 0, 0, 0.5);"></div>
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative">
+                <!-- Content Below -->
+                <div class="mt-auto d-flex flex-column align-items-start">
+                  <h4 class="app__header-h4">Truffle-Infused Grilled Fish Fillet</h4>
+                  <p class="p-subheading">€22.99</p>
+                </div>
+                <!-- Button on the right side -->
+                <div class="d-flex justify-content-end">
+                  <button
+                type="button"
+                class="btn btn-lg button-menu"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              >
+                Order Now
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel2"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel2">
+                        Item Details
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Truffle-Infused Grilled Fish Fillet</h4>
+                      <p>
+                        Savor the elegance of our Truffle-Infused Grilled Fish Fillet, a dish that combines the delicate, 
+                        flaky texture of perfectly grilled fish with the luxurious aroma of truffle. 
+                        Infused with a rich truffle butter, each bite offers a harmonious balance of smoky, earthy, and savory flavors. 
+                        Served with a light drizzle of fresh herbs and a hint of citrus, this refined dish brings a touch of indulgence to your dining experience.
+                      </p>
+                      <img src="./images/menu02.jpg" alt="" class="img-fluid" />
+                      <p class="mt-3">€22.99</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn button-menu-modal">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Menu2 end -->
+
+          <!-- Menu3-->
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative" 
+                 style="background-image: url('./images/menu03.jpg'); background-size: cover; background-position: center;">
+              <!-- Dark Overlay for visibility -->
+              <div class="overlay position-absolute top-0 bottom-0 start-0 end-0" style="background: rgba(0, 0, 0, 0.5);"></div>
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative">
+                <!-- Content Below -->
+                <div class="mt-auto d-flex flex-column align-items-start">
+                  <h4 class="app__header-h4">Special Lobster with Green Sauce</h4>
+                  <p class="p-subheading">€22.99</p>
+                </div>
+                <!-- Button on the right side -->
+                <div class="d-flex justify-content-end">
+                  <button
+                type="button"
+                class="btn btn-lg button-menu"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+              >
+                Order Now
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel3"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel3">
+                        Item Details
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Lobster with Green Sauce</h4>
+                      <p>
+                        Delight in the luxurious flavors of our Lobster with Green Sauce. 
+                        This succulent lobster is perfectly grilled to enhance its natural sweetness and tenderness, 
+                        then paired with a vibrant green sauce crafted from fresh herbs, garlic, and a hint of citrus. 
+                        The sauce's delicate balance of earthy, fragrant notes elevates the richness of the lobster, creating a refined and harmonious dish. 
+                        Finished with a touch of lemon zest, this masterpiece offers a sophisticated and unforgettable seafood experience.
+                      </p>
+                      <img src="./images/menu03.jpg" alt="" class="img-fluid" />
+                      <p class="mt-3">€22.99</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn button-menu-modal">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Menu3 end -->
+
+          <!-- Second Row Menu Start   -->
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 style=margin-top:50px">
+            <!-- Menu4 start -->
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative" 
+                   style="background-image: url('./images/menu04.jpg'); background-size: cover; background-position: center;">
+                <!-- Dark Overlay for visibility -->
+                <div class="overlay position-absolute top-0 bottom-0 start-0 end-0" style="background: rgba(0, 0, 0, 0.5);"></div>
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative">
+                  <!-- Content Below -->
+                  <div class="mt-auto d-flex flex-column align-items-start">
+                    <h4 class="app__header-h4">Special Beef Ragù Spaghetti</h4>
+                    <p class="p-subheading">€22.99</p>
+                  </div>
+                  <!-- Button on the right side -->
+                  <div class="d-flex justify-content-end">
+                    <button
+                      type="button"
+                      class="btn btn-lg button-menu"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal4"
+                    >
+                      Order Now
+                    </button>
+  
+                <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal4"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel4"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel4">
+                                Item Details
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <h4>Special Beef Ragù Spaghetti</h4>
+                              <p>
+                                Perfectly al dente pasta coated in a savory beef ragù, simmered with fresh herbs and ripe tomatoes. Topped with Parmigiano-Reggiano, this dish offers a simple yet elegant take on the beloved Bolognese.
+                              </p>
+                              <img src="./images/menu04.jpg" alt="" class="img-fluid" />
+                              <p class="mt-3">€22.99</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button type="button" class="btn button-menu-modal">
+                                Add to Cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Menu4 end -->
+  
+            <!-- Menu5 start -->
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative" 
+                   style="background-image: url('./images/menu05.jpg'); background-size: cover; background-position: center;">
+                <!-- Dark Overlay for visibility -->
+                <div class="overlay position-absolute top-0 bottom-0 start-0 end-0" style="background: rgba(0, 0, 0, 0.5);"></div>
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative">
+                  <!-- Content Below -->
+                  <div class="mt-auto d-flex flex-column align-items-start">
+                    <h4 class="app__header-h4">Grilled Salmon with Fresh Salad</h4>
+                    <p class="p-subheading">€22.99</p>
+                  </div>
+                  <!-- Button on the right side -->
+                  <div class="d-flex justify-content-end">
+                    <button
+                  type="button"
+                  class="btn btn-lg button-menu"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal5"
+                >
+                  Order Now
+                </button>
+  
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal5"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel5"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel5">
+                          Item Details
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <h4>Grilled Salmon with Fresh Salad</h4>
+                        <p>
+                          Savor the delicate flavors of our perfectly grilled salmon, its tender, flaky texture enhanced by a subtle char. Accompanied by a vibrant salad of seasonal greens, herbs, and a citrus vinaigrette, this dish offers a refreshing balance of smokiness and brightness. A light yet luxurious option, ideal for a refined dining experience.
+                        </p>
+                        <img src="./images/menu05.jpg" alt="" class="img-fluid" />
+                        <p class="mt-3">€22.99</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn button-menu-modal">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Menu5 end -->
+  
+            <!-- Menu6-->
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative" 
+                   style="background-image: url('./images/menu06.jpg'); background-size: cover; background-position: center;">
+                <!-- Dark Overlay for visibility -->
+                <div class="overlay position-absolute top-0 bottom-0 start-0 end-0" style="background: rgba(0, 0, 0, 0.5);"></div>
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative">
+                  <!-- Content Below -->
+                  <div class="mt-auto d-flex flex-column align-items-start">
+                    <h4 class="app__header-h4">Special Supreme Prime Beef Burger</h4>
+                    <p class="p-subheading">€22.99</p>
+                  </div>
+                  <!-- Button on the right side -->
+                  <div class="d-flex justify-content-end">
+                    <button
+                  type="button"
+                  class="btn btn-lg button-menu"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal6"
+                >
+                  Order Now
+                </button>
+  
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal3"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel6"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel6">
+                          Item Details
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <h4>Special Supreme Prime Beef Burger</h4>
+                        <p>
+                          Delight in the unparalleled richness of our Supreme Prime Beef Burger, crafted from hand-selected prime beef, expertly grilled to achieve the perfect balance of tenderness and flavor. Topped with silky melted aged cheddar, crisp lettuce, vine-ripened tomatoes, and caramelized onions, this burger is enhanced with a delicate truffle aioli. Served on a freshly toasted brioche bun, and accompanied by gourmet hand-cut fries, this sophisticated twist on a classic offers a luxurious, unforgettable dining experience.
+                        </p>
+                        <img src="./images/menu06.jpg" alt="" class="img-fluid" />
+                        <p class="mt-3">€22.99</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn button-menu-modal">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+  
+    
+    <!-- menu section end -->
+    
+  
+    <!-- footer section start -->
+    <footer class="px-4 py-5 my-5 text-center">
+        <div class="container mb-5">
+          <div class="footer-container">
+              <p class="p-subheading-footer">Newsletter</p>
+              <h1 class="display-5 fw-bold app__header__footer">Subscribe To Our Newsletter</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="subheading-lead lead mb-4">And never miss latest Updates!</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button type="button" class="btn btn-lg button-menu btn-lg px-4">Subscribe</button>
+                </div>
+          </div>
+        </div>
+      
+        <div class="container mt-5 text-align text-white">
+          <div class="row">
+                <div class="col-md-4">
+                  <h4>Contact Us</h4>
+                  <p>9 W 53rd St, New York, NY 10019, USA <br>
+                    +1 212-344-1230 <br>
+                    +1 212-555-1230</p>
+                </div>
+                <div class="col-md-4">
+                  <img src="./images/gericht.png" alt="" height="50px">
+                  <p>"The best way to find yourself is to lose yourself in the service of others."</p>
+                </div>
+                <div class="col-md-4">
+                  <h4>Working Hours</h4>
+                    <p>Monday-Friday: <br>
+                    08:00 am - 12:00 am <br>
+                    Saturday-Sunday: <br>
+                    08:00 am - 12:00 am
+                  </p>
+                </div>
+
+                <div class="text-center mt-5">
+                    <p>2024 Mark Anthony Ruiz. All Rights Reserved.</p>
+                </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- footer section end -->
+
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
