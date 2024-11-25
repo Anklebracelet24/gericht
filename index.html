@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- navbar section starts -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-bg-black" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-bg-black sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img class="main-logo" src="./images/gericht.png" alt="logo" />
@@ -47,16 +47,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Awards</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
           </ul>
 
@@ -73,41 +70,43 @@
     <!-- navbar section ends -->
 
     <!-- header section starts -->
-    <div class="custom-bg-black" id="header">
-      <div class="header container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5 py-5">
-          <div class="col-lg-6">
-            <p class="p-subheading">Chase the new flavour</p>
-            <h1 class="app__header-h1 display-5 fw-bold lh-3 mb-4">
-              The Key To Fine Dining
-            </h1>
-            <p class="subheading-lead">
-              Step into a world of refinement and sophistication. Let our expert
-              chefs guide you through a masterful symphony of flavors, where
-              each dish is a work of art. Experience timeless elegance and
-              impeccable service—your extraordinary dining journey awaits
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="button2 px-4">Explore Menu</button>
+     <section id="hero">
+        <div class="custom-bg-black">
+          <div class="header container col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-5 py-5">
+              <div class="col-lg-6">
+                <p class="p-subheading">Chase the new flavour</p>
+                <h1 class="app__header-h1 display-5 fw-bold lh-3 mb-4">
+                  The Key To Fine Dining
+                </h1>
+                <p class="subheading-lead">
+                  Step into a world of refinement and sophistication. Let our expert
+                  chefs guide you through a masterful symphony of flavors, where
+                  each dish is a work of art. Experience timeless elegance and
+                  impeccable service—your extraordinary dining journey awaits
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="button2 px-4">Explore Menu</button>
+                </div>
+              </div>
+              <div class=" col-sm-12 col-lg-6">
+                <img
+                  src="./images/welcome.png"
+                  class="d-block mx-lg-auto img-fluid"
+                  alt="welcome-image"
+                  width="700"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
-          <div class=" col-sm-12 col-lg-6">
-            <img
-              src="./images/welcome.png"
-              class="d-block mx-lg-auto img-fluid"
-              alt="welcome-image"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
         </div>
-      </div>
-    </div>
+    </section>
     <!-- header section ends -->
 
     <!-- about us section starts -->
-    <section class="container about-us-container py-5">
+    <section id="about" class="container about-us-container py-5">
       <div class="row">
         <!-- Carousel Column -->
         <div class="col-lg-6 col-md-12">
@@ -657,54 +656,53 @@
       </div>
     </section>
 
-  
-    
     <!-- menu section end -->
     
   
     <!-- footer section start -->
-    <footer class="px-4 py-5 my-5 text-center">
-        <div class="container mb-5">
-          <div class="footer-container">
-              <p class="p-subheading-footer">Newsletter</p>
-              <h1 class="display-5 fw-bold app__header__footer">Subscribe To Our Newsletter</h1>
-              <div class="col-lg-6 mx-auto">
-                <p class="subheading-lead lead mb-4">And never miss latest Updates!</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button type="button" class="btn btn-lg button-menu btn-lg px-4">Subscribe</button>
-                </div>
+    <section id="footer">
+      <footer class="px-4 py-5 my-5 text-center">
+          <div class="container mb-5">
+            <div class="footer-container">
+                <p class="p-subheading-footer">Newsletter</p>
+                <h1 class="display-5 fw-bold app__header__footer">Subscribe To Our Newsletter</h1>
+                <div class="col-lg-6 mx-auto">
+                  <p class="subheading-lead lead mb-4">And never miss latest Updates!</p>
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-lg button-menu btn-lg px-4">Subscribe</button>
+                  </div>
+            </div>
           </div>
-        </div>
-      
-        <div class="container mt-5 text-align text-white">
-          <div class="row">
-                <div class="col-md-4">
-                  <h4>Contact Us</h4>
-                  <p>9 W 53rd St, New York, NY 10019, USA <br>
-                    +1 212-344-1230 <br>
-                    +1 212-555-1230</p>
-                </div>
-                <div class="col-md-4">
-                  <img src="./images/gericht.png" alt="" height="50px">
-                  <p>"The best way to find yourself is to lose yourself in the service of others."</p>
-                </div>
-                <div class="col-md-4">
-                  <h4>Working Hours</h4>
-                    <p>Monday-Friday: <br>
-                    08:00 am - 12:00 am <br>
-                    Saturday-Sunday: <br>
-                    08:00 am - 12:00 am
-                  </p>
-                </div>
+        
+          <div class="container mt-5 text-align text-white">
+            <div class="row">
+                  <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>9 W 53rd St, New York, NY 10019, USA <br>
+                      +1 212-344-1230 <br>
+                      +1 212-555-1230</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="./images/gericht.png" alt="" height="50px">
+                    <p>"The best way to find yourself is to lose yourself in the service of others."</p>
+                  </div>
+                  <div class="col-md-4">
+                    <h4>Working Hours</h4>
+                      <p>Monday-Friday: <br>
+                      08:00 am - 12:00 am <br>
+                      Saturday-Sunday: <br>
+                      08:00 am - 12:00 am
+                    </p>
+                  </div>
 
-                <div class="text-center mt-5">
-                    <p>2024 Mark Anthony Ruiz. All Rights Reserved.</p>
-                </div>
+                  <div class="text-center mt-5">
+                      <p>2024 Mark Anthony Ruiz. All Rights Reserved.</p>
+                  </div>
+            </div>
           </div>
-        </div>
-    </footer>
-
+      </footer>
+  </section>
     <!-- footer section end -->
 
 
